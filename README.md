@@ -2,8 +2,8 @@
 A collection of design experiments using HTML5, CSS3, Bootstrap, jQuery.
 
 ![](https://raw.github.com/BardenDaSparden/Images/master/Reclaimers1.png?raw=true)
-![](https://raw.github.com/BardenDaSparden/Images/master/Portfolio7.png?raw=true)
-![](https://raw.github.com/BardenDaSparden/Images/master/Portfolio6.png?raw=true)
+![](https://raw.github.com/BardenDaSparden/Images/master/portfolio7.png?raw=true)
+![](https://raw.github.com/BardenDaSparden/Images/master/portfolio6.png?raw=true)
 ![](https://raw.github.com/BardenDaSparden/Images/master/Portfolio1.png?raw=true)
 ![](https://raw.github.com/BardenDaSparden/Images/master/Portfolio1_2.png?raw=true)
 ![](https://raw.github.com/BardenDaSparden/Images/master/Portfolio2.png?raw=true)
