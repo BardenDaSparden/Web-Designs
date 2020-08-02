@@ -1,0 +1,76 @@
+@font-face{
+	font-family:"basic";
+	src:url("fonts/basic.eot");
+	src:url("fonts/basic.eot?#iefix") format("embedded-opentype"),
+		url("fonts/basic.woff") format("woff"),
+		url("fonts/basic.ttf") format("truetype");
+}
+
+@font-face{
+	font-family:"sqr";
+	src:url("fonts/square.eot");
+	src:url("fonts/square.eot?#iefix") format("embedded-opentype"),
+		url("fonts/square.woff") format("woff"),
+		url("fonts/square.ttf") format("truetype");
+}
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background-image:url("backgrounds/space.jpg");
+	background-position:fixed;
+	background-attachment:fixed;
+}
+
+ul{
+	list-style:none;
+}
+
+#wrapper{
+	width:1200px;
+	height:1200px;
+	padding:0px 15px;
+	padding-top:0px;
+	margin:0px auto;
+	background:rgba(0, 0, 0, 0.6);
+	display:block;
+	overflow:auto;
+}
+
+#message{
+	padding:20px;
+	margin-top:250px;
+}
+
+#message p{
+	font-family:verdana;
+	font-size:12px;
+	color:#BFBFBF;
+	text-shadow:-1px -1px rgba(0, 0, 0, 0.3);
+}
+
+#message a{
+	color:#3A9DC7;
+	text-decoration:none;
+}
+
+#message a:hover{
+	text-decoration:underline;
+}
+
+.base-container{
+	background: #404040; /* Old browsers */
+	background: -moz-linear-gradient(top,  #404040 0%, #3a3a3a 40%, #303030 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#404040), color-stop(40%,#3a3a3a), color-stop(100%,#303030)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #404040 0%,#3a3a3a 40%,#303030 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #404040 0%,#3a3a3a 40%,#303030 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #404040 0%,#3a3a3a 40%,#303030 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #404040 0%,#3a3a3a 40%,#303030 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404040', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
+	box-shadow:0px -3px 8px rgba(0, 0, 0, 0.2);
+	border-top:1px solid #545454;
+	border-radius:5px;
+}
