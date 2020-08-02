@@ -1,0 +1,7 @@
+#debug-message{
+  font-size:1.2em;
+}
+
+#debug-message:after{
+  content:"Tablet - (like) viewing Region Detected!";
+}

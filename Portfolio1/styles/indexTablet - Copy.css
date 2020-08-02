@@ -1,0 +1,84 @@
+#navigation-container{
+  padding:1.25em 0em;
+}
+
+#navigation-sitename p{
+  font-size:2.0em;
+  letter-spacing:0.5px;
+}
+
+#navigation-dropdown{
+  display:none;
+  opacity:0;
+}
+
+#navigation-menu{
+  margin-left:10em;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:center;
+  opacity:1;
+}
+
+.navigation-link{
+  margin-left:1.25em;
+  padding:0.35em 0.8em;
+  font-family:'Raleway', tahoma;
+  font-size:1.05em;
+  color:#EFEFEF;
+  letter-spacing:-0.5px;
+  display:flex;
+  transition:background .1s ease-in-out;
+}
+
+.navigation-link:hover{
+  background:#c6480f;
+}
+
+.navigation-link div{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+
+#blurb{
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  flex:1;
+}
+
+#blurb-text{
+  font-size:2.15em;
+}
+
+.button{
+  margin:0em 2em;
+}
+
+#descriptors{
+  font-size:0.65em;
+  letter-spacing:-1.5px;
+}
+
+#story-container{
+  flex-direction:row;
+  justify-content:center;
+  align-items:stretch;
+}
+
+.story-title{
+  font-size:1.5em;
+}
+
+.story-content{
+  font-size:1em;
+}
+
+.story-piece{
+  margin:1em;
+  margin-top:2em;
+  padding:2em;
+}

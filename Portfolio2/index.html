@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="utf-8"/>
+    <title>I'm Branden Monroe</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Montserrat:300i|Oswald" rel="stylesheet">
+    <script src="scripts/jquery-3.2.1.js"></script>
+    <script src="scripts/canvasjs.min.js"></script>
+    <script src="scripts/ChartDataController.js"></script>
+    <script src="scripts/EffectsController.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/base.css"/>
+    <!-- <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px) and (orientation: portrait), (max-width: 480px) and (orientation: portrait)" href="styles/mobile.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width:641px)" href="styles/tablet.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width:1024px)" href="styles/desktop.css"/> -->
+    <link rel="stylesheet" type="text/css" href="styles/test.css"/>
+  </head>
+  <body>
+    <div id="page-background">
+    </div>
+    <div class="content-container" id="navigation">
+      <div class="content-section" id="header-section">
+        <div id="navigation-menu">
+          <div id="navigation-title">
+            <p>
+              Branden.<span>IO</span>
+            </p>
+          </div>
+          <div id="desktop-menu">
+            <a href="#home-page" class="menu-link" id="home-link">
+              <img src="References/home-icon.png" />
+              <p>
+                Home
+              </p>
+            </a>
+              <a href="#about-page" class="menu-link" id="about-link">
+                <img src="References/profile-icon.png" />
+                <p>
+                  About
+                </p>
+              </a>
+              <a href="#experience-page" class="menu-link" id="experience-link">
+                <img src="References/resume-icon.png" />
+                <p>
+                  Experience
+                </p>
+              </a>
+              <a href="#projects-page" class="menu-link" id="projects-link">
+                <img src="References/projects-icon.png" />
+                <p>
+                  Projects
+                </p>
+              </a>
+              <a href="#contact-page" class="menu-link" id="contact-link">
+                <img src="References/contact-icon.png" />
+                <p>
+                  Contact
+                </p>
+              </a>
+          </div>
+          <a href="javascript:;" id="menu-toggle">
+            <div id="icon-container">
+              <div class="icon-row" id="icon-row-1">
+                <div class="icon-box">
+                </div>
+                <div class="icon-box">
+                </div>
+                <div class="icon-box">
+                </div>
+              </div>
+              <div class="icon-row" id="icon-row-2">
+                <div class="icon-box">
+                </div>
+                <div class="icon-box">
+                </div>
+                <div class="icon-box">
+                </div>
+              </div>
+              <div class="icon-row" id="icon-row-3">
+                <div class="icon-box">
+                </div>
+                <div class="icon-box">
+                </div>
+                <div class="icon-box">
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- <div id="dropdown-menu">
+          <div id="navigation-dropdown-menu">
+            <a class="navigation-link" href="#home-page">
+              <div>
+                <p>
+                  Home
+                </p>
+              </div>
+            </a>
+            <a class="navigation-link" href="#about-page">
+              <div>
+                <p>
+                  About
+                </p>
+              </div>
+            </a>
+            <a class="navigation-link" href="#experience-page">
+              <div>
+                <p>
+                  Experience
+                </p>
+              </div>
+            </a>
+            <a class="navigation-link" href="#projects-page">
+              <div>
+                <p>
+                  My Work
+                </p>
+              </div>
+            </a>
+            <a class="navigation-link" href="#contact-page">
+              <div>
+                <p>
+                  Contact
+                </p>
+              </div>
+            </a>
+            <div class="navigation-seperator"></div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div id="main-container">
+      <div class="page-container" id="home-page">
+        <div class="page-section">
+          <div class="page-message" id="home-page-message">
+            <div class="page-message-background">
+            </div>
+            <div class="page-message-content">
+              <div class="page-message-row" id="page-message-first">
+                <p>
+                  Branden Monroe
+                </p>
+              </div>
+              <!-- <div class="page-message-row" id="pmr-2">
+                <p>
+                  For Hire
+                </p>
+              </div> -->
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="content-chunk" id="home-chunk">
+              <div class="article">
+                  <div class="article-header">
+                    <p>
+                      Overview
+                    </p>
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-body">
+                    <div id="column-container">
+                      <div class="column-small">
+                        <div class="column-header">
+                          <img src="References/about-medium-icon.png" />
+                          <p>
+                            About Me
+                          </p>
+                        </div>
+                        <div class="column-content">
+                        </div>
+                        <a class="column-footer" href="#about-page" id="about-btn">
+                          Learn More
+                        </a>
+                      </div>
+
+                      <div class="column-small">
+                        <div class="column-header">
+                          <img src="References/experience-icon.png" />
+                          <p>
+                            Technical Skills
+                          </p>
+                        </div>
+                        <div class="column-content">
+                        </div>
+                        <a class="column-footer" href="#experience-page" id="experience-btn">
+                          Overview
+                        </a>
+                      </div>
+
+                      <div class="column-small">
+                        <div class="column-header">
+                          <img src="References/projects-medium-icon.png" />
+                          <p>
+                            My Creations
+                          </p>
+                        </div>
+                        <div class="column-content">
+                        </div>
+                        <a class="column-footer" href="#projects-page" id="projects-btn">
+                          View Projects
+                        </a>
+                      </div>
+
+                      <div class="column-small">
+                        <div class="column-header">
+                          <img src="References/contact-medium-icon.png" />
+                          <p>
+                            Get In Contact
+                          </p>
+                        </div>
+                        <div class="column-content">
+                        </div>
+                        <a class="column-footer" href="#contact-page" id="contact-btn">
+                          Send Message
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="article-seperator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-container" id="about-page">
+        <div class="page-section">
+          <div class="page-message">
+            <div class="page-message-background">
+            </div>
+            <div class="page-message-content">
+              <div class="page-message-row">
+                <p>
+                  About Me
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="content-chunk">
+              <div class="article">
+                  <div class="article-header">
+                    <p>
+                      Freelance Programmer, Austin TX
+                    </p>
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-body">
+                    <p>
+                      My name's Branden Monroe. I'm a freelance programmer who creates with code. My primary interests are game programming, and web technologies.</p>
+                  </div>
+                  <div class="article-seperator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-container" id="experience-page">
+        <div class="page-section">
+          <div class="page-message">
+            <div class="page-message-background">
+            </div>
+            <div class="page-message-content">
+              <div class="page-message-row">
+                <p>
+                  Technical Overview
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="content-chunk">
+              <div class="article">
+                  <div class="article-header">
+                    <p>
+                      Skills
+                    </p>
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-body">
+                    <div id="charts">
+                      <div class="chart-container">
+                        <div class="chart" id="chart-overview"></div>
+                      </div>
+                      <div class="chart-container">
+                        <div class="chart" id="chart-tools"></div>
+                      </div>
+                      <div class="chart-container">
+                        <div class="chart" id="chart-libraries"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="article-seperator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-container" id="projects-page">
+        <div class="page-section">
+          <div class="page-message">
+            <div class="page-message-background">
+            </div>
+            <div class="page-message-content">
+              <div class="page-message-row">
+                <p>
+                  My Work
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="content-chunk">
+              <div class="article">
+                  <div class="article-header">
+                    <p>
+                      Vector Defender
+                    </p>
+                    <p id="minor-version">
+                      Beta 0.3
+                    </p>
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-body">
+
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-footer">
+                      <a href="javascript:;" class="article-footer-btn">
+                        View
+                      </a>
+                      <a href="javascript:;" class="article-footer-btn">
+                        Source
+                      </a>
+                      <div id="footer-button-inactive">
+                        Download
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="content-chunk">
+              <div class="article">
+                  <div class="article-header">
+                    <p>
+                      Remnant
+                    </p>
+                    <p id="minor-version">
+                      Alpha 0.1
+                    </p>
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-body">
+
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-footer">
+                      <a href="javascript:;" class="article-footer-btn">
+                        View
+                      </a>
+                      <a href="javascript:;" class="article-footer-btn">
+                        Source
+                      </a>
+                      <div id="footer-button-inactive">
+                        Download
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="content-chunk">
+              <div class="article">
+                  <div class="article-header">
+                    <p>
+                      JavaTROID
+                    </p>
+                    <p id="minor-version">
+                      Beta 0.5
+                    </p>
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-body">
+
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-footer">
+                      <a href="javascript:;" class="article-footer-btn">
+                        View
+                      </a>
+                      <a href="javascript:;" class="article-footer-btn">
+                        Source
+                      </a>
+                      <div id="footer-button-inactive">
+                        Download
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="content-chunk">
+              <div class="article">
+                  <div class="article-header">
+                    <p>
+                      WatchDAWG
+                    </p>
+                    <p id="minor-version">
+                      Alpha 0.1
+                    </p>
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-body">
+
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-footer">
+                      <a href="javascript:;" class="article-footer-btn">
+                        View
+                      </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-container" id="contact-page">
+        <div class="page-section">
+          <div class="page-message">
+            <div class="page-message-background">
+            </div>
+            <div class="page-message-content">
+              <div class="page-message-row">
+                <p>
+                  Contact Me
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="content-chunk">
+              <div class="article">
+                  <div class="article-header">
+                    <p>
+                      Personal Information
+                    </p>
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-body">
+                    <img id="information-picture" src="References/profile-picture-reg.jpg" />
+                    <p>
+
+                    </p>
+                  </div>
+                  <div class="article-seperator"></div>
+              </div>
+            </div>
+            <div class="content-chunk">
+              <div class="article">
+                  <div class="article-header">
+                    <p>
+                      Drop A Message
+                    </p>
+                  </div>
+                  <div class="article-seperator"></div>
+                  <div class="article-body">
+
+                  </div>
+                  <div class="article-seperator"></div>
+              </div>
+            </div>
+            <div class="content-chunk" id="footer-chunk">
+              <div id="footer-nav-social">
+                <div id="social-menu">
+                  <a class="social-link" href="https://github.com/BardenDaSparden" target="_blank">
+                    <div>
+                      <img src="References/github-icon.png"/>
+                    </div>
+                  </a>
+                  <a class="social-link" href="https://twitter.com/Branden_IO" target="_blank">
+                    <div>
+                      <img src="References/twitter-icon.png" src/>
+                    </div>
+                  </a>
+                  <a class="social-link" href="javascript:;" target="_blank" >
+                    <div>
+                      <img src="References/facebook-icon.png" />
+                    </div>
+                  </a>
+                  <a class="social-link" href="https://www.pinterest.com/BardenDaSparden/" target="_blank">
+                    <div>
+                      <img src="References/pintrest-icon.png"/>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div id="footer-seperator"></div>
+              <div id="copyright-notice">
+                <p>
+                  Copyright&copy; 2016-2017
+                </p>
+                <p>
+                  Branden Monroe
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
