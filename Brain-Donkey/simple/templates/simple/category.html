@@ -1,0 +1,18 @@
+{% extends "simple/base.html" %}
+
+{% block title %}Contact Donkey{% endblock %}
+
+{% block content %}
+<div id="content" class="container content-block justify-content-center align-items-start">
+  {% for project in projects %}
+    <p>
+      project.title
+    </p>
+  {% endfor %}
+  {% for post in posts %}
+    <p>
+      post.title
+    </p>
+  {% endfor %}
+</div>
+{% endblock %}

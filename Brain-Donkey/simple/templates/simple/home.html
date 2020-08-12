@@ -1,0 +1,72 @@
+{% extends "simple/base.html" %}
+{% load static %}
+
+{% block title %}Brain Donkey{% endblock %}
+
+{% block links %}
+  <link href="{% static 'simple/css/home.css' %}" rel="stylesheet"/>
+{% endblock %}
+
+{% block content %}
+<div id="content" class="container-fluid content-block justify-content-center align-items-start">
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        {% for post in posts reversed %}
+          <div class="row post-row">
+            <div class="col-12">
+              <h2>
+                {{post.title}}
+              </h2>
+              <h5>
+                {% for category in post.categories.all %}
+                  <span class="post-badge">{{category}}</span>
+                {% endfor %}
+                {{post.published}}
+              </h5>
+              <br/>
+              <div>
+                {{post.content | safe}}
+              </div>
+              <br/>
+              <div>
+                <a href="/ramblings/{{post.id}}/" class="btn btn-info post-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="col-3">
+        <div class="row post-row">
+          <div class="col">
+            <h2>
+              Projects
+            </h2>
+            <ul>
+              {% for project in projects%}
+                <li class="project-li">
+                  <a class="category-link" href="/projects/{{project.id}}">{{project.name}}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div class="row post-row">
+          <div class="col">
+            <h2>
+              Categories
+            </h2>
+            <ul>
+              {% for category in categories %}
+                <li class="category-li">
+                  <a class="category-link" href="/category/{{category.title}}">{{category.title}}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

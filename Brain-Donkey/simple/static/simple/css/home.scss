@@ -1,0 +1,34 @@
+$colors: (
+  black: #0B0C10,
+  dark-grey: #1F2833,
+  light-grey: #C5C6C7,
+  bright: #66FCF1,
+  accent: #45A29E
+);
+
+@function color($color-name){
+  @return map-get($colors, $color-name);
+}
+
+#content {
+  padding:0 !important;
+}
+
+.show-row {
+  padding:0 !important;
+  height:65vh;
+
+  canvas {
+    width:100%;
+    height:100%;
+    background: #1F2833; /* Old browsers */
+  }
+
+}
+
+.post-row {
+  .col {
+    padding:1em;
+    background-color:rgba(0, 0, 0, 0.12);
+  }
+}

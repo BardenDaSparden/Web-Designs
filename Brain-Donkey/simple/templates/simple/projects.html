@@ -1,0 +1,48 @@
+{% extends "simple/base.html" %}
+{% load static %}
+
+{% block title %}Project Donkey{% endblock %}
+{% block links %}
+  <link href="{% static 'simple/css/projects.css' %}" rel="stylesheet"/>
+{% endblock %}
+
+{% block content %}
+  {% for project in projects %}
+  <div class="container-fluid container-tech">
+    <div class="container">
+      
+    </div>
+  </div>
+  <div id="content" class="container-fluid content-block justify-content-center align-items-start">
+    <div class="container">
+      <div class="row post-row">
+        <div class="col-12">
+          <h2>
+            {{project.name}}
+          </h2>
+          <p class="project-description">
+            {{project.description}}
+          </p>
+          <h5 class="project-info">
+            {% for category in project.categories.all %}
+              <span class="post-badge">{{category}}</span>
+            {% endfor %}
+            {{project.published}}
+          </h5>
+          <div class="row justify-content-left align-items-center">
+            {% for image in project.images.all %}
+              <div class="col-6 image-col">
+                <img class="project-image" src="{% static image.path %}" %} />
+              </div>
+            {% endfor %}
+          </div>
+          <br/>
+          <div>
+            {{project.content | safe}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+{% endblock %}

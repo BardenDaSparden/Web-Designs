@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static 'simple/css/base.css' %}" rel="stylesheet"/>
+    <link href="{% static 'tinymce/css/prism.css' %}" rel="stylesheet"/>
+    {% block links %}{% endblock %}
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="container-main" class="container-fluid">
+        {% include "simple/navbar.html" %}
+        <main id="container-content" class="container-fluid">
+          {% block content %}{% endblock %}
+        </main>
+        {% include "simple/footer.html" %}
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="{% static 'simple/js/math.js' %}"></script>
+  <script src="{% static 'simple/js/plexus.js' %}"></script>
+  <script src="{% static 'simple/js/home.js' %}"></script>
+  <script src="{% static 'tinymce/js/prism.js' %}"></script>
+</html>

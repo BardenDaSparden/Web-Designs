@@ -1,0 +1,27 @@
+{% extends "simple/base.html" %}
+
+{% block title %}Blog Donkey{% endblock %}
+
+{% block content %}
+  {% for post in posts reversed %}
+  <div id="content" class="container content-block justify-content-center align-items-start">
+    <div class="row post-row">
+      <div class="col-12">
+        <h2>
+          {{post.title}}
+        </h2>
+        <h5>
+          {% for category in post.categories.all %}
+            <span class="post-badge">{{category}}</span>
+          {% endfor %}
+          {{post.published}}
+        </h5>
+        <br/>
+        <div>
+          {{post.content | safe}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,28 @@
+#content {
+  padding: 0 !important; }
+
+.container-tech {
+  padding: 0 !important;
+  background-color: rgba(0, 0, 0, 0.12); }
+
+.col-tech {
+  padding: 4em !important; }
+  .col-tech h2 {
+    color: #45A29E;
+    font-weight: 450;
+    font-size: 2.25em; }
+
+.show-row {
+  padding: 0 !important;
+  height: 65vh; }
+  .show-row canvas {
+    width: 100%;
+    height: 100%;
+    background: #1F2833;
+    /* Old browsers */ }
+
+.post-row .col {
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.12); }
+
+/*# sourceMappingURL=home.css.map */
